@@ -1,0 +1,133 @@
+@font-face {
+    font-family: caveat;
+    src: url('Caveat-VariableFont_wght.ttf')
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: red;
+}
+
+.hero {
+    margin: 10px auto;
+    border: 1px solid rgb(247, 244, 244);
+    padding: 10px;
+}
+
+#hero-para {
+    font-family: caveat;
+    float: left;
+    width: 70%;
+    height: auto;
+}
+
+#hero-img {
+    float: left;
+    width: 30%;
+    height: auto;
+}
+
+@media only screen and (max-width:375px) {
+    #hero-para {
+        width: 100%;
+    }
+
+    #hero-img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    #hero-para {
+        width: 100%;
+    }
+
+    #hero-img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    #hero-para {
+        font-size: 25px;
+        width: 50%;
+    }
+
+    #hero-img {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    #hero-para {
+        font-size: 30px;
+        width: 50%;
+    }
+
+    #hero-img {
+        width: 50%;
+    }
+}
+
+#bot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 75px;
+    width: 75px;
+}
+
+.social {
+    position: fixed;
+    border: 1px solid gray;
+    background-color: rgb(205, 211, 222);
+    color: coral;
+    border-radius: 10px 0px 0px 10px;
+    border-right: none;
+    top: 100px;
+    right: 0px;
+    animation-name: move;
+    animation-duration: 3s;
+}
+
+@keyframes move {
+    0% {
+        top:0px;
+        right: 0px;
+    }
+    25%{
+        top: 300px;
+        right: 0px;
+        background-color: cadetblue;
+    }
+}
+
+#social {
+    height: 40px;
+    width: 40px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
